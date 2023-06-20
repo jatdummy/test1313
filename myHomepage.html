@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>나의 포트폴리오</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+   a:hover {
+     color: red;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .name {
+    transition: font-size 0.3s ease;
+    }
+    
+    .profile-image {
+      position: absolute;
+    }
+
+    .logo {
+      font-size: 36px;
+      font-weight: bold;
+      color: #FF0000;
+    }
+
+    .menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .menu li {
+      margin-right: 10px;
+    }
+
+    .menu li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    .profile-section {
+      display: flex;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .profile-image {
+      position: absolute;
+      top: 100px;
+      left: 200px;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: #ccc;
+      margin-right: 20px;
+      background-image: url("https://d2u3dcdbebyaiu.cloudfront.net/uploads/atch_img/849/997e6b299c1aa09cc1b298b8b037fed9_res.jpeg");
+      background-size: cover;
+    }
+
+    .profile-info {
+      flex-grow: 1;
+    }
+
+    .profile-info h1 {
+      font-size: 28px;
+      margin: 0;
+    }
+
+    .profile-info p {
+      margin: 5px 0;
+    }
+
+    .social-icons {
+      display: flex;
+      margin-top: 10px;
+    }
+
+    .social-icons a {
+      color: #333;
+      text-decoration: none;
+      margin-right: 10px;
+    }
+
+    .project-section {
+      padding: 40px;
+    }
+
+    .project {
+      display: flex;
+      margin-bottom: 40px;
+    }
+
+    .project-image1 {
+      width: 900px;
+      height: 500px;
+      margin-right: 20px;
+      background-image: url("https://blog.kakaocdn.net/dn/zlD6v/btqGeaigsAV/jhR79tsSUOL94hTej3Crh0/img.png");
+      background-size: cover;
+    }
+
+    .project-image2 {
+      width: 900px;
+      height: 500px;
+      margin-right: 20px;
+      background-image: url("https://image.yes24.com/blogimage/blog/y/h/yhy0719/mM44bwFw.jpg");
+      background-size: cover;
+    }
+   
+    .project-image3 {
+      width: 900px;
+      height: 500px;
+      margin-right: 20px;
+      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYBzlzL-V65YYq4kCvPmSKYT6C7pI6JtxXMg&usqp=CAU");
+      background-size: cover;
+    }
+   
+    .project-info {
+      flex-grow: 1;
+    }
+
+    .project-info h2 {
+      font-size: 32px; 
+      margin: 0;
+    }
+
+    .project-info p {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    .contact-section {
+      background-color: #f4f4f4;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .contact-heading {
+      font-size: 48px;
+      color: #3366ff;
+      margin-bottom: 20px;
+    }
+
+    .contact-info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .contact-info1 {
+      display: flex;
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    .contact-icon {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+      background-color: #333;
+    }
+
+      .target-element {
+    position: relative;
+    }
+
+    .contact-info p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      DSU
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="#">메뉴1</a></li>
+        <li><a href="#">메뉴2</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="profile-section">
+    <div class="profile-image" id="profile-image"></div>
+    <script>
+      var profileImage = document.getElementById("profile-image");
+       profileImage.addEventListener("click", function() {
+    alert("프로필 이미지를 클릭했습니다!");
+  });
+    </script>
+
+    </div>
+    <div class="profile-info">
+      <h1 class="name" onmouseover="this.style.fontSize='44px'" onmouseout="this.style.fontSize='36px'">정승원</h1>
+      <p>학생/인공지능응용</p>
+      <p>131333@gmail.com</p>
+      <div class="social-icons">
+      </div>
+    </div>
+  </section>
+
+  <section class="project-section">
+    <div class="project">
+      <div class="project-info">
+        <h2 style="font-size: 40px;">올레KT(포트폴리오용)</h2> 
+        <p style="font-size: 24px;">기존 사이트에서 불편함 점을 찾아 개선하였고,<br>카피 사이트를 제작하였습니다</p> 
+        <p style="font-size: 20px;">사용 툴 : Photoshop, Visual Studio Code</p> 
+        <p><a href="https://www.kt.com/">사이트로 이동</a></p>
+      </div>
+      <div class="project-image1">
+      </div>
+    </div>
+    <div class="project">
+      <div class="project-info">
+        <h2 style="font-size: 40px;">파랑의 역사(포트폴리오용)</h2>
+        <p style="font-size: 24px;">파랑의 역사 라는 책에 대해 살펴볼 수 있는<br> e-book 페이지 입니다.</p> 
+        <p style="font-size: 20px;">사용 툴 : Photoshop, Visual Studio Code</p>
+        <a href="https://kim-ji-min.github.io/history-of-blue/">사이트로 이동</a>
+      </div>
+      <div class="project-image2">
+      </div>
+    </div>
+    <div class="project">
+      <div class="project-info">
+        <h2 style="font-size: 40px;">동서대학교</h2> 
+        <p style="font-size: 24px;">동서대학교를 소개하는 학교 홈페이지 입니다.</p> 
+        <p style="font-size: 20px;">사용 툴 : Photoshop, Dreamweaver</p> 
+        <a href="https://www.dongseo.ac.kr/kr/">사이트로 이동</a>
+      </div>
+      <div class="project-image3">
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <h2 class="contact-heading">Contact</h2>
+    <div class="contact-info1">
+     <p> 이 작업물로 좋은 학점을 받을 수 있는,<br>
+      웹콘텐츠 제작에 있어 트랜드를 반영하는 웹퍼블리셔가 되겠습니다.</p>
+    </div>
+    <div class="contact-info">
+      <p> 이름 : 정승원</p>
+    </div>
+    <div class="contact-info">
+      <p>e-mail: 131333@gmail.com</p>
+    </div>
+      <div class="contact-info">
+    <img src="https://mblogthumb-phinf.pstatic.net/20150403_67/e2voo_14280514292377Sadp_JPEG/kakako-03.jpg?type=w2" alt="사진">
+  </div>
+    <div class="contact-info">
+      <p><a href="https://github.com/siball1/test1313">Git 바로가기</a></p>
+    </div>
+  </section>
+</body>
+</html> 
